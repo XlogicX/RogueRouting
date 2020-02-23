@@ -247,12 +247,6 @@ for idx, dungeon in enumerate(dungeonpaths):  # Check routing for each dungeon
   if nonull == 1:
     mazes_outs[idx+1].pop(0)  # Remove the first item if it isn't possible
 
-from pprint import pprint
-#for idx,mazeout in enumerate(mazes_outs):
-#  print("{} - {}".format(idx,mazeout))
-#for idx,mazein in enumerate(mazes_ins):
-#  print("{} - {}".format(idx,mazein))
-
 # If we want to auto-scale (up) the node amount and item depth for only the best & shortest route
 if shortest == True:
   print('Using multiple passes to select the shortest path from dungeon {} to dungeon {}...'.format(args.start,args.end))
